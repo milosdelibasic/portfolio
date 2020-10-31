@@ -1,0 +1,211 @@
+#about {
+  background-color: var(--color-primary);
+  padding: 15rem 10rem;
+
+  @include respond(tab-land) {
+    padding: 5rem 0.5rem 13rem 1.5rem;
+  }
+
+  @include respond(phone) {
+    padding: 10rem 0.5rem 13rem 0.5rem;
+  }
+
+  @include respond(big-desktop) {
+    padding: 12rem 10rem 18rem 10rem;
+  }
+
+  // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.about {
+  color: var(--color-text-light);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+
+  &-buttonBox {
+    display: flex;
+
+    @include respond(tab-land) {
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+      // display: block;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-theme {
+    font-size: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      justify-content: center;
+      margin: 1rem 0;
+    }
+    // width: 200px;
+
+    & i {
+      margin-right: 4px;
+    }
+
+    &-dot {
+      margin-left: 0.9rem;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border: 2px solid var(--color-light);
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      cursor: pointer;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+
+      &:nth-of-type(1) {
+        background-color: #1d1d1d;
+      }
+
+      &:nth-of-type(2) {
+        background-color: #580000;
+      }
+    }
+  }
+
+  &-cursive {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &-first {
+    position: absolute;
+    top: 6rem;
+
+    @include respond(tab-land) {
+      top: 1rem;
+    }
+  }
+
+  &-last {
+    position: absolute;
+    bottom: 11rem;
+
+    @include respond(big-desktop) {
+      bottom: 13rem;
+    }
+  }
+
+  & h1 {
+    font-size: 5rem;
+    margin-left: 13rem;
+
+    letter-spacing: 3px;
+
+    text-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.85);
+
+    @include respond(tab-land) {
+      margin-left: 14rem;
+    }
+  }
+
+  &-row {
+    position: relative;
+  }
+
+  &-double {
+    position: absolute;
+    top: -1px;
+    left: 4px;
+    color: var(--color-text-dark);
+  }
+
+  &-paragraph {
+    margin: 2rem 13rem;
+    font-size: 1.8rem;
+
+    @include respond(tab-land) {
+      text-align: center;
+    }
+  }
+
+  &-img {
+    width: 350px;
+    height: 350px;
+
+    background: url("/resources/cv.jpg");
+    background-size: cover;
+    background-position-y: -50px;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    right: 15rem;
+
+    @include respond(bp-big) {
+      right: 0;
+      position: relative;
+    }
+
+    @include respond(tab-land) {
+      margin: 3.5rem auto 2rem auto;
+    }
+
+    @include respond(phone) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @include respond(big-desktop) {
+      width: 550px;
+      height: 550px;
+      right: 0;
+    }
+
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    border: 2px solid var(--color-text-light);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+
+    &:hover {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+
+      @include respond(phone) {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      }
+    }
+  }
+
+  &-right {
+    position: relative;
+  }
+}

@@ -1,0 +1,55 @@
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--border-primary);
+  margin: 2rem 1.5rem;
+  color: var(--color-text-light);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+
+  &:hover {
+    color: var(--color-primary);
+    background: var(--color-text-light);
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: 1px solid var(--border-secondary);
+  margin: 2rem 1.5rem;
+  color: var(--color-text-darkest);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+
+  @include respond(tab-land) {
+    margin: 1rem 1.5rem;
+    font-size: 2rem;
+  }
+
+  &:hover {
+    color: var(--color-primary);
+    background: var(--color-text-light);
+  }
+}
+
+.btn-pulsate {
+  &:hover {
+    animation: pulsate 1.4s infinite;
+    -webkit-animation: pulsate 1.4s infinite;
+  }
+}
+
+.btn-shadow {
+  -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.75);
+}

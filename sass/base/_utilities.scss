@@ -1,0 +1,27 @@
+.cursive {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  opacity: 0.35;
+}
+
+.indent-small {
+  margin-left: 3rem;
+}
+
+.indent-medium {
+  margin-left: 8rem;
+}
+
+.text-shadow-dark {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.75);
+}
+.text-shadow-light {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+}
+.text-shadow-medium {
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
+
+.txt-primary {
+  color: var(--color-primary);
+}

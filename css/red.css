@@ -1,0 +1,71 @@
+:root {
+  --color-primary: #580000;
+  --color-primary-darker: #3d0000;
+  --color-primary-lighter: #910000;
+  --color-primary-2: #960202;
+  --color-secondary: #ca9595;
+  --color-light: #ebcdcd;
+  --color-light-2: #b47e7e;
+  --color-light-3: #916565;
+
+  --color-logo-1: #8db6cd;
+  --color-logo-2: #424242;
+
+  --color-text-light: #ebcdcd;
+  --color-text-light-opacity: #ebcdcda4;
+  --color-text-dark: #4f2f2f;
+  --color-text-darkest: #180e0e;
+
+  --border-primary: #b37a7a;
+  --border-secondary: #533a3a;
+
+  --popup-buttons: top, #1d1d1d 10%, #636262 50%, #1d1d1d 90%;
+  --popup-lines: #111111;
+}
+
+.contact {
+  background: url(../../resources/mail.jpg),
+    linear-gradient(to bottom, #ebcdcd, #580000);
+  background-position: top;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-heading::before {
+  background-color: rgba(216, 149, 149, 0.568);
+}
+
+.popup-inner-views label {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #580000),
+    color-stop(50%, #ebcdcd),
+    color-stop(95%, #580000)
+  );
+  background: linear-gradient(top, #580000 5%, #ebcdcd 50%, #580000 95%);
+  color: #110000;
+}
+
+.popup-inner-views input:checked + label {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ebcdcd),
+    color-stop(50%, #830000),
+    to(#ebcdcd)
+  );
+  background: linear-gradient(top, #ebcdcd 0%, #830000 50%, #ebcdcd 100%);
+  -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid #555555;
+  color: var(--color-light);
+}
+
+.popup-inner-views input:checked + label:hover {
+  color: black;
+}
