@@ -373,6 +373,7 @@
                 <a
                   href="#popup-1"
                   class="btn btn-pulsate projects-project-button"
+                  onclick="disableScroll()"
                   ><i class="fas fa-ellipsis-h"></i> More about project</a
                 >
               </div>
@@ -688,7 +689,11 @@
               >
             </div>
           </div>
-          <a href="#projects" class="popup-inner-close btn-pulsate">
+          <a
+            href="#projects"
+            class="popup-inner-close btn-pulsate"
+            onclick="enableScroll()"
+          >
             <i class="fas fa-times-circle"></i
           ></a>
         </div>
