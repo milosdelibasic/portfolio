@@ -383,8 +383,22 @@
       }
 
       @include respond(bp-medium) {
-        margin: inherit 0;
-        margin-right: 500px;
+        transform: scale(0.45);
+        -webkit-transform: scale(0.45);
+        -moz-transform: scale(0.45);
+        -ms-transform: scale(0.45);
+        -o-transform: scale(0.45);
+        margin-left: -6rem;
+        margin-top: -8rem;
+      }
+      @include respond(bp-small) {
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        -ms-transform: scale(0.4);
+        -o-transform: scale(0.4);
+        margin-left: -12.5rem;
+        margin-top: -9rem;
       }
     }
 

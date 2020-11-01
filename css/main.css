@@ -1197,8 +1197,25 @@ span {
 
 @media only screen and (max-width: 31.25em) {
   .popup-inner-views-view-laptop .projects-project-laptop {
-    margin: inherit 0;
-    margin-right: 500px;
+    transform: scale(0.45);
+    -webkit-transform: scale(0.45);
+    -moz-transform: scale(0.45);
+    -ms-transform: scale(0.45);
+    -o-transform: scale(0.45);
+    margin-left: -6rem;
+    margin-top: -8rem;
+  }
+}
+
+@media only screen and (max-width: 21.875em) {
+  .popup-inner-views-view-laptop .projects-project-laptop {
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    margin-left: -12.5rem;
+    margin-top: -9rem;
   }
 }
 
