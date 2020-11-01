@@ -79,6 +79,7 @@ body {
           box-sizing: border-box;
   background-color: var(--color-primary);
   overflow-x: hidden;
+  position: relative;
 }
 
 body * {
@@ -235,8 +236,20 @@ span {
   margin-left: 3rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .indent-small {
+    margin-left: 2rem;
+  }
+}
+
 .indent-medium {
   margin-left: 8rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .indent-medium {
+    margin-left: 5rem;
+  }
 }
 
 .text-shadow-dark {
@@ -1182,6 +1195,13 @@ span {
   }
 }
 
+@media only screen and (max-width: 31.25em) {
+  .popup-inner-views-view-laptop .projects-project-laptop {
+    margin: inherit 0;
+    margin-right: 500px;
+  }
+}
+
 .popup-inner-views-view-laptop h3 {
   margin-top: 2rem;
 }
@@ -1405,7 +1425,7 @@ span {
     position: fixed;
     right: 2rem;
     top: 2rem;
-    z-index: 50000;
+    z-index: 15000;
     background-color: var(--color-primary);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1699,7 +1719,7 @@ span {
 
 @media only screen and (max-width: 37.5em) {
   #about {
-    padding: 10rem 0.5rem 13rem 0.5rem;
+    padding: 6rem 0.5rem 13rem 0.5rem;
   }
 }
 
@@ -1850,6 +1870,13 @@ span {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .about h1 {
+    margin-left: 10rem;
+    font-size: 4.5rem;
+  }
+}
+
 .about-row {
   position: relative;
 }
@@ -1895,13 +1922,6 @@ span {
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-@media only screen and (max-width: 87.5em) {
-  .about-img {
-    right: 0;
-    position: relative;
-  }
-}
-
 @media only screen and (max-width: 75em) {
   .about-img {
     margin: 3.5rem auto 2rem auto;
@@ -1912,6 +1932,23 @@ span {
   .about-img {
     width: 300px;
     height: 300px;
+  }
+}
+
+@media only screen and (max-width: 87.5em) {
+  .about-img {
+    right: 0;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 21.875em) {
+  .about-img {
+    right: 0;
+    position: relative;
+    width: 230px;
+    height: 230px;
+    background-position-y: -20px;
   }
 }
 
@@ -2516,6 +2553,12 @@ span {
   .footer-navigation-list-item {
     display: block;
     padding: 1rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 21.875em) {
+  .footer-navigation-list-item {
+    padding: 1rem;
   }
 }
 
