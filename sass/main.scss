@@ -1,0 +1,20 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/laptop";
+@import "components/tablet";
+@import "components/phone";
+@import "components/popup";
+
+@import "layout/navigation";
+@import "layout/about";
+@import "layout/skills";
+@import "layout/projects";
+@import "layout/contact";
+@import "layout/footer";

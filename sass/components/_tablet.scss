@@ -1,0 +1,157 @@
+.projects-project {
+  position: relative;
+  &-tablet {
+    height: 300px;
+    width: 225px;
+    border: 1px solid #222425e0;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 200;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    background: linear-gradient(70deg, #3d4144 40%, #4d5155 100%);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8),
+      inset 5px 5px 10px 5px rgba(22, 22, 22, 0.25);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8),
+      inset 5px 5px 10px 5px rgba(22, 22, 22, 0.25);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8),
+      inset 5px 5px 10px 5px rgba(22, 22, 22, 0.25);
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      height: 290px;
+      width: 215px;
+      left: 4px;
+      bottom: 4.5px;
+      border: 1px solid #2d2f31;
+      border-radius: inherit;
+      -webkit-border-radius: inherit;
+      -moz-border-radius: inherit;
+      -ms-border-radius: inherit;
+      -o-border-radius: inherit;
+      background: linear-gradient(
+        75deg,
+        #3d4144 0%,
+        #3d4144 58%,
+        #4d5155 58.5%,
+        #4d5155 100%
+      ) !important;
+
+      -webkit-box-shadow: inset 0px 0px 15px 6px rgb(40, 43, 44);
+      -moz-box-shadow: inset 0px 0px 15px 6px rgb(40, 43, 44);
+      box-shadow: inset 0px 0px 15px 6px rgb(40, 43, 44);
+    }
+
+    &-img {
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      height: 246px;
+      width: 184.5px;
+      border: 1px solid #222425e0;
+      left: 17px;
+      bottom: 30px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    &-details {
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background: radial-gradient(
+        circle,
+        rgb(44, 44, 44) 0%,
+        rgb(10, 10, 10) 100%
+      );
+      //   color: rgb(22, 22, 22);
+      border: 1px solid #222425e0; //#222425e0
+      left: 106px;
+      top: 7px;
+
+      &::after {
+        display: block;
+        content: "O";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: rgb(22, 22, 22);
+        background: linear-gradient(
+          top,
+          rgb(150, 150, 150) 0%,
+          rgb(22, 22, 22) 90%
+        );
+        // border: 1px solid #22242546;
+        top: 263px;
+        left: -4px;
+        padding-left: 0px;
+        padding-top: 0px;
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        z-index: 1000;
+      }
+    }
+
+    &-buttons {
+      height: 18px;
+      width: 3px;
+      background-color: #424447;
+      // display: inline-block;
+      position: absolute;
+      right: -4px;
+      top: 20px;
+      z-index: 199;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: inherit;
+        background-color: inherit;
+        right: 0;
+        z-index: inherit;
+        border-top-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+
+      &::before {
+        height: inherit;
+        top: 22px;
+      }
+
+      &::after {
+        height: 24px;
+        top: 52px;
+      }
+    }
+  }
+}

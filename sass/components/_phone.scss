@@ -1,0 +1,162 @@
+.projects-project {
+  //1.777777778
+  &-phone {
+    //display: none;
+    position: absolute;
+    height: 200px;
+    width: 112.5px;
+    border: 1px solid #555555;
+    bottom: -9px;
+    right: -60px;
+    z-index: 500;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #666666;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.8);
+
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+
+    @include respond(tab-land) {
+      right: -30px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &::before {
+      height: 194px;
+      width: 107px;
+      top: 2px;
+      left: 1.5px;
+      background-color: rgb(24, 24, 24);
+      border-radius: inherit;
+      -webkit-border-radius: inherit;
+      -moz-border-radius: inherit;
+      -ms-border-radius: inherit;
+      -o-border-radius: inherit;
+    }
+
+    &::after {
+      background-color: rgb(7, 7, 7); //rgb(7, 7, 7);
+      height: 8px;
+      width: 40px;
+      left: 36.25px;
+      top: 2px;
+      z-index: 600;
+      border-radius: 0px 0px 5px 5px;
+      -webkit-border-radius: 0px 0px 5px 5px;
+      -moz-border-radius: 0px 0px 5px 5px;
+      -ms-border-radius: 0px 0px 5px 5px;
+      -o-border-radius: 0px 0px 5px 5px;
+    }
+
+    &-details {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background: radial-gradient(
+        circle,
+        rgb(44, 44, 44) 0%,
+        rgb(29, 29, 29) 100%
+      );
+      left: 65px;
+      top: 3px;
+      z-index: 601;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        background: inherit;
+        top: 1.5px;
+        left: -21.5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+
+      &::before {
+        display: block;
+        content: "Telenor";
+        position: absolute;
+        font-size: 4px;
+        left: -52px;
+        top: 1px;
+        color: #a4d3ee;
+      }
+    }
+    &-screen {
+      height: 194px;
+      width: 107px;
+      position: absolute;
+      top: 2.5px;
+      left: 2px;
+      z-index: 4;
+      background-size: cover;
+      background-position: center;
+      border-radius: inherit;
+      -webkit-border-radius: inherit;
+      -moz-border-radius: inherit;
+      -ms-border-radius: inherit;
+      -o-border-radius: inherit;
+      clip-path: polygon(0 8px, 107px 8px, 107px 194px, 0 194px);
+    }
+
+    &-buttons {
+      height: 16px;
+      width: 2px;
+      background-color: #5f5f5f;
+      // display: inline-block;
+      position: absolute;
+      right: -3px;
+      top: 15px;
+      z-index: 501;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: inherit;
+        background-color: inherit;
+        right: 0;
+        z-index: inherit;
+        border-top-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+
+      &::before {
+        height: inherit;
+        top: 20px;
+      }
+
+      &::after {
+        height: 22px;
+        top: 44px;
+      }
+    }
+  }
+}
