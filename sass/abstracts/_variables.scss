@@ -24,7 +24,7 @@
   --popup-lines: #111111;
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
   :root {
     // --color-primary: #14213b;
     --color-primary: #1d1d1d !important;
