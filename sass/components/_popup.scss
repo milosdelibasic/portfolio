@@ -510,6 +510,10 @@
         margin-bottom: 3rem;
         margin-left: 33%;
       }
+
+      @include respond(bp-small) {
+        margin-left: 22%;
+      }
     }
     & h3 {
       margin-top: 2rem;

@@ -1341,6 +1341,12 @@ span {
   }
 }
 
+@media only screen and (max-width: 21.875em) {
+  .popup-inner-views-view-phone .projects-project-phone {
+    margin-left: 22%;
+  }
+}
+
 .popup-inner-views-view-phone h3 {
   margin-top: 2rem;
 }
@@ -2405,6 +2411,12 @@ span {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 21.875em) {
+  .contact {
+    height: 70rem;
   }
 }
 

@@ -33,6 +33,10 @@
     @include background;
   }
 
+  @include respond(bp-small) {
+    height: 70rem;
+  }
+
   // @include respond(bp-medium) {
   //   background: url(../../resources/mail500.jpg),
   //     linear-gradient(to bottom, #85a7bb, #141414);
