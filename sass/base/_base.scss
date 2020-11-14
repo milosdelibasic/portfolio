@@ -35,6 +35,7 @@ body {
   background-color: var(--color-primary);
   // overflow: hidden;
   overflow-x: hidden;
+  position: relative;
 
   & * {
     transition: all 0.3s ease-out;

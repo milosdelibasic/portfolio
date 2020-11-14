@@ -6,10 +6,18 @@
 
 .indent-small {
   margin-left: 3rem;
+
+  @include respond(phone) {
+    margin-left: 2rem;
+  }
 }
 
 .indent-medium {
   margin-left: 8rem;
+
+  @include respond(phone) {
+    margin-left: 5rem;
+  }
 }
 
 .text-shadow-dark {

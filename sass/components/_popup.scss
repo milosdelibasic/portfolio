@@ -235,7 +235,7 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        background: url(../../resources/programming.jpg), #000000ec;
+        background: url(../../resources/programming400.jpg), #000000ec;
         background-size: cover;
         background-position: center;
         background-blend-mode: overlay;
@@ -380,6 +380,25 @@
         -moz-transform: scale(0.6);
         -ms-transform: scale(0.6);
         -o-transform: scale(0.6);
+      }
+
+      @include respond(bp-medium) {
+        transform: scale(0.45);
+        -webkit-transform: scale(0.45);
+        -moz-transform: scale(0.45);
+        -ms-transform: scale(0.45);
+        -o-transform: scale(0.45);
+        margin-left: -6rem;
+        margin-top: -8rem;
+      }
+      @include respond(bp-small) {
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        -ms-transform: scale(0.4);
+        -o-transform: scale(0.4);
+        margin-left: -12.5rem;
+        margin-top: -9rem;
       }
     }
 

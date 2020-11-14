@@ -1917,7 +1917,6 @@ span {
 }
 
 .about-img {
-  width: 550px;
   position: absolute;
   right: 0;
   top: -13rem;
@@ -1930,38 +1929,26 @@ span {
 
 @media only screen and (max-width: 75em) {
   .about-img {
-    margin: 3.5rem auto 2rem auto;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .about-img {
-    width: 300px;
-    height: 300px;
+    margin-top: 7rem;
   }
 }
 
 @media only screen and (max-width: 87.5em) {
   .about-img {
-    right: 0;
     position: relative;
   }
 }
 
 @media only screen and (max-width: 21.875em) {
   .about-img {
-    right: 0;
-    position: relative;
-    width: 230px;
-    height: 230px;
-    background-position-y: -20px;
+    margin-top: 10rem;
   }
 }
 
 @media only screen and (min-width: 112.5em) {
   .about-img {
-    width: 550px;
-    height: 550px;
+    margin-top: 5rem;
+    margin-left: 5rem;
     right: 0;
   }
 }
@@ -1986,6 +1973,21 @@ span {
 
 .about-right {
   position: relative;
+}
+
+@media only screen and (max-width: 75em) {
+  .about-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: -20rem;
+  }
 }
 
 #skills {

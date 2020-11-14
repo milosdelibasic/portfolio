@@ -86,6 +86,10 @@
           padding: 1rem 1.5rem;
         }
 
+        @include respond(bp-small) {
+          padding: 1rem;
+        }
+
         &:not(:last-of-type) {
           border-right: 1px solid var(--border-primary);
 
