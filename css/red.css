@@ -25,12 +25,102 @@
 
 .contact {
   background: url(../../resources/mail.jpg),
+    -webkit-gradient(linear, left top, left bottom, from(#ebcdcd), to(#580000));
+  background: url(../../resources/mail.jpg),
+    -o-linear-gradient(top, #ebcdcd, #580000);
+  background: url(../../resources/mail.jpg),
     linear-gradient(to bottom, #ebcdcd, #580000);
   background-position: top;
   background-blend-mode: overlay;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 87.5em) {
+    background: url(../../resources/mail1400.jpg),
+      -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail1400.jpg),
+      -o-linear-gradient(top, #85a7bb, #141414);
+    background: url(../../resources/mail1400.jpg),
+      linear-gradient(to bottom, #85a7bb, #141414);
+    background-position: top;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 75em) {
+    height: 55rem;
+    background: url(../../resources/mail1200.jpg),
+      -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail1200.jpg),
+      -o-linear-gradient(top, #85a7bb, #141414);
+    background: url(../../resources/mail1200.jpg),
+      linear-gradient(to bottom, #85a7bb, #141414);
+    background-position: top;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    background: url(../../resources/mail900.jpg),
+      -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail900.jpg),
+      -o-linear-gradient(top, #85a7bb, #141414);
+    background: url(../../resources/mail900.jpg),
+      linear-gradient(to bottom, #85a7bb, #141414);
+    background-position: top;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    height: 60rem;
+    background: url(../../resources/mail600.jpg),
+      -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail600.jpg),
+      -o-linear-gradient(top, #85a7bb, #141414);
+    background: url(../../resources/mail600.jpg),
+      linear-gradient(to bottom, #85a7bb, #141414);
+    background-position: top;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    background: url(../../resources/mail500.jpg),
+      -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail500.jpg),
+      -o-linear-gradient(top, #85a7bb, #141414);
+    background: url(../../resources/mail500.jpg),
+      linear-gradient(to bottom, #85a7bb, #141414);
+    background-position: top;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 21.875em) {
+    background: url(../../resources/mail350.jpg),
+      -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail350.jpg),
+      -o-linear-gradient(top, #85a7bb, #141414);
+    background: url(../../resources/mail350.jpg),
+      linear-gradient(to bottom, #85a7bb, #141414);
+    background-position: top;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .contact-heading::before {
@@ -46,6 +136,7 @@
     color-stop(50%, #ebcdcd),
     color-stop(95%, #580000)
   );
+  background: -o-linear-gradient(top, #580000 5%, #ebcdcd 50%, #580000 95%);
   background: linear-gradient(top, #580000 5%, #ebcdcd 50%, #580000 95%);
   color: #110000;
 }
@@ -59,6 +150,7 @@
     color-stop(50%, #830000),
     to(#ebcdcd)
   );
+  background: -o-linear-gradient(top, #ebcdcd 0%, #830000 50%, #ebcdcd 100%);
   background: linear-gradient(top, #ebcdcd 0%, #830000 50%, #ebcdcd 100%);
   -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
   box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);

@@ -148,48 +148,31 @@
   }
 
   &-img {
-    width: 350px;
-    height: 350px;
-
-    background: url("/resources/cv.jpg");
-    background-size: cover;
-    background-position-y: -50px;
-
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    // width: 550px;
     position: absolute;
-    right: 15rem;
+    right: 0;
+    top: -13rem;
 
     @include respond(tab-land) {
-      margin: 3.5rem auto 2rem auto;
+      margin-top: 7rem;
     }
 
     @include respond(phone) {
-      width: 300px;
-      height: 300px;
+      // width: 300px;
+      // height: 300px;
     }
 
     @include respond(bp-big) {
-      right: 0;
       position: relative;
     }
 
     @include respond(bp-small) {
-      right: 0;
-      position: relative;
-      width: 230px;
-      height: 230px;
-      background-position-y: -20px;
-
-      // margin: 0;
+      margin-top: 10rem;
     }
 
     @include respond(big-desktop) {
-      width: 550px;
-      height: 550px;
+      margin-top: 5rem;
+      margin-left: 5rem;
       right: 0;
     }
 
@@ -198,17 +181,17 @@
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    border: 2px solid var(--color-text-light);
-    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    // border: 2px solid var(--color-text-light);
+    // -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    // -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    // box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
 
     &:hover {
-      transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
 
       @include respond(phone) {
         transform: scale(1.1);
@@ -222,5 +205,12 @@
 
   &-right {
     position: relative;
+
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -20rem;
+    }
   }
 }

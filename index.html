@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Web developer named Miloš Delibašić from Novi Sad, Serbia."
+    />
     <title>Miloš Delibašić Portfolio</title>
 
     <link
@@ -10,7 +14,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <link rel="stylesheet" href="css/main.min.css" />
@@ -128,7 +132,55 @@
           <p unselectable="on" class="cursive about-last">&lt;/html&gt;</p>
         </div>
         <div class="about-right">
-          <div class="about-img"></div>
+          <picture>
+            <source
+              srcset="./resources/milos230.png"
+              type="image/jpg"
+              media="screen and (max-width: 18.75em)"
+              class="about-img"
+            />
+            <source
+              srcset="./resources/milos300.png"
+              type="image/jpg"
+              media="screen and (max-width: 31.25em)"
+              class="about-img"
+            />
+            <source
+              srcset="./resources/milos450.png"
+              type="image/jpg"
+              media="screen and (max-width: 37.5em)"
+              class="about-img"
+            />
+            <source
+              srcset="./resources/milos650.png"
+              type="image/jpg"
+              media="screen and (min-width: 112.5em)"
+              class="about-img"
+            />
+            <!-- Default img -->
+            <img
+              src="./resources/milos550.png"
+              alt="Image of Miloš Delibašić"
+              class="about-img"
+            />
+          </picture>
+          <!-- <img
+            srcset="
+              ./resources/milos230.png 230w,
+              ./resources/milos300.png 300w,
+              ./resources/milos550.png 550w,
+              ./resources/milos650.png 650w
+            "
+            sizes="(max-width: 21.875em) 230w,
+            (max-width: 37.5em) 300w,
+            (min-width: 112.5em) 650w,
+            550px
+            "
+            src="./resources/milos550.png"
+            alt="Milos's profile picture"
+            class="about-img"
+            loading="lazy"
+          /> -->
         </div>
       </section>
       <!-- /End of About Section -->
@@ -702,6 +754,6 @@
 
     <!-- /End of Popups -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/main.js"></script>
+    <script src="/main.min.js"></script>
   </body>
 </html>

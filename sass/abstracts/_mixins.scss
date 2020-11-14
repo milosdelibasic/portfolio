@@ -51,3 +51,11 @@ $breakpoint arguement choices:
     } //1800
   }
 }
+
+@mixin background {
+  background-position: top;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
