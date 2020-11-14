@@ -2360,8 +2360,8 @@ span {
 
 @media only screen and (max-width: 87.5em) {
   .contact {
-    background: url(../../resources/mail1400.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
-    background: url(../../resources/mail1400.jpg), linear-gradient(to bottom, #85a7bb, #141414);
+    background: url(../../resources/mail2000.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail2000.jpg), linear-gradient(to bottom, #85a7bb, #141414);
     background-position: top;
     background-blend-mode: overlay;
     background-attachment: fixed;
@@ -2373,8 +2373,8 @@ span {
 @media only screen and (max-width: 75em) {
   .contact {
     height: 55rem;
-    background: url(../../resources/mail1200.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
-    background: url(../../resources/mail1200.jpg), linear-gradient(to bottom, #85a7bb, #141414);
+    background: url(../../resources/mail1400.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail1400.jpg), linear-gradient(to bottom, #85a7bb, #141414);
     background-position: top;
     background-blend-mode: overlay;
     background-attachment: fixed;
@@ -2385,8 +2385,8 @@ span {
 
 @media only screen and (max-width: 56.25em) {
   .contact {
-    background: url(../../resources/mail900.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
-    background: url(../../resources/mail900.jpg), linear-gradient(to bottom, #85a7bb, #141414);
+    background: url(../../resources/mail1200.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail1200.jpg), linear-gradient(to bottom, #85a7bb, #141414);
     background-position: top;
     background-blend-mode: overlay;
     background-attachment: fixed;
@@ -2398,32 +2398,8 @@ span {
 @media only screen and (max-width: 37.5em) {
   .contact {
     height: 60rem;
-    background: url(../../resources/mail600.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
-    background: url(../../resources/mail600.jpg), linear-gradient(to bottom, #85a7bb, #141414);
-    background-position: top;
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-
-@media only screen and (max-width: 31.25em) {
-  .contact {
-    background: url(../../resources/mail500.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
-    background: url(../../resources/mail500.jpg), linear-gradient(to bottom, #85a7bb, #141414);
-    background-position: top;
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-
-@media only screen and (max-width: 21.875em) {
-  .contact {
-    background: url(../../resources/mail350.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
-    background: url(../../resources/mail350.jpg), linear-gradient(to bottom, #85a7bb, #141414);
+    background: url(../../resources/mail900.jpg), -webkit-gradient(linear, left top, left bottom, from(#85a7bb), to(#141414));
+    background: url(../../resources/mail900.jpg), linear-gradient(to bottom, #85a7bb, #141414);
     background-position: top;
     background-blend-mode: overlay;
     background-attachment: fixed;

@@ -8,42 +8,42 @@
   text-align: center;
 
   @include respond(bp-big) {
-    background: url(../../resources/mail1400.jpg),
+    background: url(../../resources/mail2000.jpg),
       linear-gradient(to bottom, #85a7bb, #141414);
     @include background;
   }
 
   @include respond(tab-land) {
     height: 55rem;
-    background: url(../../resources/mail1200.jpg),
+    background: url(../../resources/mail1400.jpg),
       linear-gradient(to bottom, #85a7bb, #141414);
     @include background;
   }
 
   @include respond(tab-port) {
-    background: url(../../resources/mail900.jpg),
+    background: url(../../resources/mail1200.jpg),
       linear-gradient(to bottom, #85a7bb, #141414);
     @include background;
   }
 
   @include respond(phone) {
     height: 60rem;
-    background: url(../../resources/mail600.jpg),
+    background: url(../../resources/mail900.jpg),
       linear-gradient(to bottom, #85a7bb, #141414);
     @include background;
   }
 
-  @include respond(bp-medium) {
-    background: url(../../resources/mail500.jpg),
-      linear-gradient(to bottom, #85a7bb, #141414);
-    @include background;
-  }
+  // @include respond(bp-medium) {
+  //   background: url(../../resources/mail500.jpg),
+  //     linear-gradient(to bottom, #85a7bb, #141414);
+  //   @include background;
+  // }
 
-  @include respond(bp-small) {
-    background: url(../../resources/mail350.jpg),
-      linear-gradient(to bottom, #85a7bb, #141414);
-    @include background;
-  }
+  // @include respond(bp-small) {
+  //   background: url(../../resources/mail350.jpg),
+  //     linear-gradient(to bottom, #85a7bb, #141414);
+  //   @include background;
+  // }
 
   &-heading {
     padding: 13rem 0 2rem 0;
