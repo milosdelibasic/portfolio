@@ -2023,6 +2023,7 @@ span {
     display: block;
     width: 70%;
     margin: 0 auto;
+    font-size: 2rem;
     -webkit-box-shadow: 7px 7px 12px #0f0f0f, -4px -4px 12px #2b2b2b, inset 5px 5px 10px #0f0f0fad, inset -5px -5px 10px #2b2b2baf;
             box-shadow: 7px 7px 12px #0f0f0f, -4px -4px 12px #2b2b2b, inset 5px 5px 10px #0f0f0fad, inset -5px -5px 10px #2b2b2baf;
   }
