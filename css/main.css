@@ -1789,7 +1789,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 21.875em) {
+@media only screen and (max-width: 28.125em) {
   .projects-heading {
     margin-bottom: 2rem;
   }
@@ -1895,7 +1895,7 @@ span {
 
 @media only screen and (max-width: 28.125em) {
   .projects-project-display {
-    margin-bottom: 8rem;
+    margin-bottom: 13rem;
   }
 }
 
@@ -2040,7 +2040,7 @@ span {
 @media only screen and (max-width: 28.125em) {
   .projects-project-display-btnbox-btn:not(:last-child) {
     margin: 0 auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     width: 50%;
   }
 }

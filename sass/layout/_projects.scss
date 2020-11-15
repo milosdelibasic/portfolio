@@ -24,7 +24,7 @@
     @include respond(bp-medium) {
       margin-bottom: 0;
     }
-    @include respond(bp-small) {
+    @include respond(bp-medium-small) {
       margin-bottom: 2rem;
     }
 
@@ -107,7 +107,7 @@
       margin-bottom: 10rem;
 
       @include respond(bp-medium-small) {
-        margin-bottom: 8rem;
+        margin-bottom: 13rem;
       }
 
       @include respond(bp-small) {
@@ -232,7 +232,7 @@
             margin-right: 3rem;
             @include respond(bp-medium-small) {
               margin: 0 auto;
-              margin-bottom: 1.5rem;
+              margin-bottom: 2rem;
               width: 50%;
             }
           }
