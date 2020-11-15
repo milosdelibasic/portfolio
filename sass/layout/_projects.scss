@@ -24,6 +24,9 @@
     @include respond(bp-medium) {
       margin-bottom: 0;
     }
+    @include respond(bp-small) {
+      margin-bottom: 2rem;
+    }
 
     &::before {
       content: "";
@@ -108,7 +111,7 @@
       }
 
       @include respond(bp-small) {
-        margin-bottom: 4rem;
+        margin-bottom: 8.5rem;
       }
 
       & .computer {
@@ -213,8 +216,12 @@
           text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
 
           @include respond(bp-medium-small) {
-            font-size: 1.4rem;
-            padding: 1rem 0.7rem;
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+
+            box-shadow: 7px 7px 12px #0f0f0f, -4px -4px 12px #2b2b2b,
+              inset 5px 5px 10px #0f0f0fad, inset -5px -5px 10px #2b2b2baf;
           }
           &:hover {
             box-shadow: 0 0 0 #0f0f0f, 0 0 0 #2b2b2b, inset 5px 5px 10px #0a0a0a,
@@ -223,6 +230,11 @@
 
           &:not(:last-child) {
             margin-right: 3rem;
+            @include respond(bp-medium-small) {
+              margin: 0 auto;
+              margin-bottom: 1.5rem;
+              width: 50%;
+            }
           }
         }
       }
