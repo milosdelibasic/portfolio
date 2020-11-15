@@ -39,7 +39,7 @@ function setTheme(mode) {
     document.getElementById("red-foot").style.transform = "scale(1)";
   }
   if (mode == "red") {
-    document.getElementById("theme-style").href = "css/red.min.css";
+    document.getElementById("theme-style").href = "css/red.css"; //.min
     document.getElementById("red").style.transform = "scale(1.4)";
     document.getElementById("red-foot").style.transform = "scale(1.4)";
     document.getElementById("red").style.border =

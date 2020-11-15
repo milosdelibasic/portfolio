@@ -161,3 +161,23 @@
 .popup-inner-views input:checked + label:hover {
   color: black;
 }
+
+.skills-heading::before {
+  background-color: rgba(88, 0, 0, 0.7);
+}
+
+.skills-box {
+  background: linear-gradient(145deg, #cfb0b0, #fbdbdb);
+
+  box-shadow: 12px 12px 24px #b09a9a, -12px -12px 24px #ecd0d0,
+    inset 12px 12px 31px #b37b7b27, inset -12px -12px 31px #ffcdcd23;
+}
+
+.skills-title {
+  text-shadow: 5px 5px 5px rgba(88, 0, 0, 0.4);
+}
+
+.skills-icon {
+  filter: drop-shadow(5px 5px 5px rgba(88, 0, 0, 0.4));
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(88, 0, 0, 0.4));
+}
