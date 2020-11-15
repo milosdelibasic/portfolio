@@ -19,6 +19,12 @@ $breakpoint arguement choices:
       @content;
     } //350px
   }
+
+  @if $breakpoint == bp-medium-small {
+    @media only screen and (max-width: 28.125em) {
+      @content;
+    } //450px
+  }
   @if $breakpoint == bp-medium {
     @media only screen and (max-width: 31.25em) {
       @content;

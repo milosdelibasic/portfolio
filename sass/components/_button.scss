@@ -43,8 +43,8 @@
 
 .btn-pulsate {
   &:hover {
-    animation: pulsate 1.4s infinite;
-    -webkit-animation: pulsate 1.4s infinite;
+    animation: pulsate 1.4s infinite !important;
+    -webkit-animation: pulsate 1.4s infinite !important;
   }
 }
 

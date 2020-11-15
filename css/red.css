@@ -132,13 +132,19 @@
     linear,
     left top,
     left bottom,
-    color-stop(5%, #580000),
-    color-stop(50%, #ebcdcd),
-    color-stop(95%, #580000)
+    color-stop(2%, #580000),
+    color-stop(50%, #bd2121),
+    color-stop(98%, #580000)
   );
-  background: -o-linear-gradient(top, #580000 5%, #ebcdcd 50%, #580000 95%);
-  background: linear-gradient(top, #580000 5%, #ebcdcd 50%, #580000 95%);
-  color: #110000;
+  background: -o-linear-gradient(top, #580000 2%, #bd2121 50%, #580000 98%);
+  background: linear-gradient(top, #580000 2%, #bd2121 50%, #580000 98%);
+  color: var(--color-text-light);
+
+  transition: all 0.2s !important;
+  -webkit-transition: all 0.2s !important;
+  -moz-transition: all 0.2s !important;
+  -ms-transition: all 0.2s !important;
+  -o-transition: all 0.2s !important;
 }
 
 .popup-inner-views input:checked + label {
@@ -146,20 +152,25 @@
     linear,
     left top,
     left bottom,
-    from(#ebcdcd),
-    color-stop(50%, #830000),
-    to(#ebcdcd)
+    from(#bd2121),
+    color-stop(50%, #580000),
+    to(#bd2121)
   );
-  background: -o-linear-gradient(top, #ebcdcd 0%, #830000 50%, #ebcdcd 100%);
-  background: linear-gradient(top, #ebcdcd 0%, #830000 50%, #ebcdcd 100%);
+  background: -o-linear-gradient(top, #bd2121 0%, #580000 50%, #bd2121 100%);
+  background: linear-gradient(top, #bd2121 0%, #580000 50%, #bd2121 100%);
   -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
   box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid #692f2f;
   color: var(--color-light);
+  transition: all 0.2s !important;
+  -webkit-transition: all 0.2s !important;
+  -moz-transition: all 0.2s !important;
+  -ms-transition: all 0.2s !important;
+  -o-transition: all 0.2s !important;
 }
 
 .popup-inner-views input:checked + label:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .skills-heading::before {
@@ -167,10 +178,10 @@
 }
 
 .skills-box {
-  background: linear-gradient(145deg, #cfb0b0, #fbdbdb);
+  background: linear-gradient(145deg, #d6b5b5, #fbdbdb);
 
   box-shadow: 12px 12px 24px #b09a9a, -12px -12px 24px #ecd0d0,
-    inset 12px 12px 31px #b37b7b27, inset -12px -12px 31px #ffcdcd23;
+    inset 12px 12px 31px #c286865b, inset -12px -12px 31px #ffcdcd48;
 }
 
 .skills-title {
@@ -180,4 +191,28 @@
 .skills-icon {
   filter: drop-shadow(5px 5px 5px rgba(88, 0, 0, 0.4));
   -webkit-filter: drop-shadow(5px 5px 5px rgba(88, 0, 0, 0.4));
+}
+
+.projects-heading::before {
+  background-color: rgba(238, 121, 121, 0.63);
+}
+
+.projects-project {
+  box-shadow: 13px 13px 18px #2f0000, inset 13px 13px 18px #2f00002f,
+    -13px -13px 18px #810000, inset -11px -11px 18px #8100003a;
+}
+
+.projects-project-title {
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.15);
+}
+
+.projects-project-display-btnbox-btn {
+  box-shadow: 10px 10px 15px #2f0000, -7px -7px 15px #810000,
+    inset 5px 5px 10px #2f00007c, inset -5px -5px 10px #8100005e;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+}
+
+.projects-project-display-btnbox-btn:hover {
+  box-shadow: 0 0 0 #2f0000, 0 0 0 #810000, inset 5px 5px 10px #2f0000e3,
+    inset -5px -5px 10px #810000e0;
 }
