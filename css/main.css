@@ -1427,6 +1427,7 @@ span {
   cursor: pointer;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+  z-index: 100;
 }
 
 .about-theme-dot:nth-of-type(1) {
@@ -1530,9 +1531,15 @@ span {
   }
 }
 
+@media only screen and (max-width: 75em) {
+  .about-img {
+    margin-top: 14rem;
+  }
+}
+
 @media only screen and (max-width: 21.875em) {
   .about-img {
-    margin-top: 10rem;
+    margin-top: 13rem;
   }
 }
 
