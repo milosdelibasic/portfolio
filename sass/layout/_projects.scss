@@ -41,6 +41,11 @@
       -moz-border-radius: 20px;
       -ms-border-radius: 20px;
       -o-border-radius: 20px;
+
+      @include respond(bp-smallest) {
+        width: 110%;
+        left: -5%;
+      }
     }
   }
 
@@ -81,6 +86,23 @@
       margin-bottom: 5rem;
     }
 
+    @include respond(bp-small) {
+      transform: scale(0.97);
+      -webkit-transform: scale(0.97);
+      -moz-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      -o-transform: scale(0.97);
+    }
+
+    @include respond(bp-smallest) {
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -o-transform: scale(0.9);
+      margin-bottom: 2rem;
+    }
+
     &-title {
       text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
       margin: 2rem;
@@ -107,11 +129,11 @@
       margin-bottom: 10rem;
 
       @include respond(bp-medium-small) {
-        margin-bottom: 13rem;
+        margin-bottom: 15rem;
       }
 
       @include respond(bp-small) {
-        margin-bottom: 8.5rem;
+        margin-bottom: 9.5rem;
       }
 
       & .computer {
@@ -133,6 +155,15 @@
           -o-transform: scale(0.55);
           margin: -4rem;
         }
+
+        @include respond(bp-small) {
+          margin: -6rem;
+          transform: scale(0.5);
+          -webkit-transform: scale(0.5);
+          -moz-transform: scale(0.5);
+          -ms-transform: scale(0.5);
+          -o-transform: scale(0.5);
+        }
       }
 
       & .tablet {
@@ -144,6 +175,7 @@
         -moz-transform: rotate(-15deg);
         -ms-transform: rotate(-15deg);
         -o-transform: rotate(-15deg);
+
         @include respond(bp-medium-small) {
           transform: rotate(-15deg) scale(0.8);
           -webkit-transform: rotate(-15deg) scale(0.8);
@@ -159,6 +191,14 @@
           -ms-transform: rotate(-15deg) scale(0.55);
           -o-transform: rotate(-15deg) scale(0.55);
         }
+
+        @include respond(bp-smallest) {
+          transform: rotate(-15deg) scale(0.5);
+          -webkit-transform: rotate(-15deg) scale(0.5);
+          -moz-transform: rotate(-15deg) scale(0.5);
+          -ms-transform: rotate(-15deg) scale(0.5);
+          -o-transform: rotate(-15deg) scale(0.5);
+        }
       }
 
       & .phone {
@@ -170,6 +210,7 @@
         -moz-transform: rotate(9deg);
         -ms-transform: rotate(9deg);
         -o-transform: rotate(9deg);
+
         @include respond(bp-medium-small) {
           transform: rotate(9deg) scale(0.8);
           -webkit-transform: rotate(9deg) scale(0.8);
@@ -185,6 +226,14 @@
           -ms-transform: rotate(9deg) scale(0.55);
           -o-transform: rotate(9deg) scale(0.55);
         }
+
+        @include respond(bp-smallest) {
+          transform: rotate(9deg) scale(0.5);
+          -webkit-transform: rotate(9deg) scale(0.5);
+          -moz-transform: rotate(9deg) scale(0.5);
+          -ms-transform: rotate(9deg) scale(0.5);
+          -o-transform: rotate(9deg) scale(0.5);
+        }
       }
 
       &-btnbox {
@@ -192,7 +241,11 @@
         // margin-bottom: 2rem;
 
         @include respond(bp-medium-small) {
-          margin-top: 3rem;
+          margin-top: 2.5rem;
+        }
+
+        @include respond(bp-small) {
+          margin-top: 3.5rem;
         }
 
         &-btn {
@@ -224,6 +277,15 @@
             box-shadow: 7px 7px 12px #0f0f0f, -4px -4px 12px #2b2b2b,
               inset 5px 5px 10px #0f0f0fad, inset -5px -5px 10px #2b2b2baf;
           }
+
+          @include respond(bp-small) {
+            width: 80%;
+          }
+
+          // @include respond(bp-smallest) {
+          //   width: 80%;
+          // }
+
           &:hover {
             box-shadow: 0 0 0 #0f0f0f, 0 0 0 #2b2b2b, inset 5px 5px 10px #0a0a0a,
               inset -5px -5px 10px #252525;
@@ -231,6 +293,7 @@
 
           &:not(:last-child) {
             margin-right: 3rem;
+
             @include respond(bp-medium-small) {
               margin: 0 auto;
               margin-bottom: 2rem;

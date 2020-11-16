@@ -10,6 +10,10 @@
   @include respond(phone) {
     margin-left: 2rem;
   }
+
+  @include respond(bp-smallest) {
+    margin-left: 1rem;
+  }
 }
 
 .indent-medium {
@@ -17,6 +21,10 @@
 
   @include respond(phone) {
     margin-left: 5rem;
+  }
+
+  @include respond(bp-smallest) {
+    margin-left: 3rem;
   }
 }
 

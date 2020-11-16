@@ -78,6 +78,7 @@
 
       &:nth-of-type(1) {
         background-color: #1d1d1d;
+        margin-right: 0.1rem;
       }
 
       &:nth-of-type(2) {
@@ -126,6 +127,14 @@
       margin-left: 10rem;
       font-size: 4.5rem;
     }
+
+    @include respond(bp-small) {
+      margin-left: 8rem;
+    }
+
+    @include respond(bp-smallest) {
+      margin-left: 6rem;
+    }
   }
 
   &-row {
@@ -145,6 +154,10 @@
 
     @include respond(tab-land) {
       text-align: center;
+    }
+
+    @include respond(bp-smallest) {
+      margin: 2rem 7rem;
     }
   }
 

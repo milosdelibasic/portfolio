@@ -66,9 +66,15 @@
       height: 80%;
     }
 
+    @include respond(bp-medium) {
+      height: auto;
+    }
+
     @include respond(phone) {
       flex-direction: column;
-      height: 90%;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
     }
 
     &-views {
@@ -102,8 +108,22 @@
           right: 48.8%;
         }
 
+        @include respond(popup-big) {
+          &:nth-of-type(1) {
+            left: 23.9%;
+          }
+          &:nth-of-type(2) {
+            right: 52.1%;
+          }
+        }
+
         @include respond(phone) {
-          display: none;
+          &:first-of-type {
+            display: none;
+          }
+          &:not(:first-of-type) {
+            left: 50%;
+          }
         }
       }
 
@@ -113,6 +133,7 @@
 
           @include respond(phone) {
             border-top-right-radius: 15px;
+            border-bottom: 1px solid var(--popup-lines);
           }
         }
         font-size: 2.6rem;
@@ -139,9 +160,18 @@
         -o-transition: all 0.3s ease-out 0.05s;
 
         @include respond(phone) {
-          width: 100%;
           font-size: 2.2rem;
           padding: 1rem 0 0.5rem 0;
+          width: 100%;
+          &:not(:first-of-type) {
+            width: 50%;
+          }
+        }
+
+        @include respond(bp-small) {
+          &:not(:first-of-type) {
+            width: 49.9%;
+          }
         }
 
         &:hover {
@@ -202,6 +232,10 @@
       margin: 0;
       border-top-right-radius: inherit;
       border-bottom-right-radius: inherit;
+
+      @include respond(popup-big) {
+        width: 40%;
+      }
 
       @include respond(phone) {
         width: 100%;
@@ -267,7 +301,17 @@
           margin: 0;
           // margin-left: 1rem;
           margin-bottom: 1rem;
+          margin-top: 1rem;
           // margin-right: 1rem;
+        }
+
+        @include respond(bp-small) {
+          width: 72%;
+          height: 90%;
+        }
+
+        @include respond(bp-smallest) {
+          width: 90%;
         }
 
         & p {
@@ -276,8 +320,19 @@
           font-size: 1.6rem;
           width: 88%;
           text-align: center;
+
           &:not(:last-of-type) {
             border-bottom: 1px solid var(--border-primary);
+          }
+
+          @include respond(bp-small) {
+            &:first-of-type {
+              padding-top: 0;
+            }
+
+            &:last-of-type {
+              padding-bottom: 0;
+            }
           }
         }
       }
@@ -323,6 +378,22 @@
       @include respond(phone) {
         justify-content: center;
       }
+
+      @include respond(bp-small) {
+        flex-direction: row;
+        margin-bottom: 1rem;
+
+        & a {
+          font-size: 1.8rem;
+          padding: 1rem 0.5rem;
+        }
+      }
+
+      @include respond(bp-smallest) {
+        & a {
+          font-size: 1.6rem;
+        }
+      }
     }
   }
 }
@@ -355,11 +426,77 @@
       background-repeat: no-repeat;
       width: 500px;
       height: 400px;
+
       &::after {
         width: 461px;
         height: 247px;
         left: 19px;
         top: 20px;
+      }
+
+      @include respond(popup-big) {
+        background-image: url("../../resources/monitor350.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 280px;
+
+        &::after {
+          width: 323px;
+          height: 173px;
+          left: 13px;
+          top: 14px;
+        }
+      }
+
+      @include respond(bp-medium) {
+        background-image: url("../../resources/monitor300.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 238px;
+
+        &::after {
+          width: 277px;
+          height: 148px;
+          left: 11px;
+          top: 12px;
+        }
+      }
+
+      @include respond(bp-medium-small) {
+        background-image: url("../../resources/monitor250.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 198px;
+
+        &::after {
+          width: 231px;
+          height: 123.5px;
+          left: 9px;
+          top: 10px;
+        }
+      }
+
+      @include respond(bp-small) {
+        background-image: url("../../resources/monitor200.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 159px;
+
+        &::after {
+          width: 185px;
+          height: 99px;
+          left: 7px;
+          top: 8px;
+        }
+      }
+
+      @include respond(phone) {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
       }
     }
 

@@ -14,6 +14,11 @@ $breakpoint arguement choices:
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == bp-smallest {
+    @media only screen and (max-width: 17.5em) {
+      @content;
+    } //280px
+  }
   @if $breakpoint == bp-small {
     @media only screen and (max-width: 21.875em) {
       @content;
@@ -34,6 +39,11 @@ $breakpoint arguement choices:
     @media only screen and (max-width: 37.5em) {
       @content;
     } //600px
+  }
+  @if $breakpoint == popup-big {
+    @media only screen and (max-width: 51em) {
+      @content;
+    } //516px
   }
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) {

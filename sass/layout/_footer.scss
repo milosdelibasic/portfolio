@@ -25,6 +25,10 @@
     @include respond(phone) {
       top: 15rem;
     }
+
+    @include respond(bp-smallest) {
+      right: 1rem;
+    }
   }
 
   &-theme {
@@ -34,6 +38,10 @@
 
     @include respond(phone) {
       top: 15rem;
+    }
+
+    @include respond(bp-smallest) {
+      left: 1rem;
     }
   }
 

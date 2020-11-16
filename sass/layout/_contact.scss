@@ -34,20 +34,12 @@
   }
 
   @include respond(bp-small) {
-    height: 70rem;
+    height: 72rem;
   }
 
-  // @include respond(bp-medium) {
-  //   background: url(../../resources/mail500.jpg),
-  //     linear-gradient(to bottom, #85a7bb, #141414);
-  //   @include background;
-  // }
-
-  // @include respond(bp-small) {
-  //   background: url(../../resources/mail350.jpg),
-  //     linear-gradient(to bottom, #85a7bb, #141414);
-  //   @include background;
-  // }
+  @include respond(bp-smallest) {
+    height: 75rem;
+  }
 
   &-heading {
     padding: 13rem 0 2rem 0;
@@ -67,6 +59,11 @@
       -moz-border-radius: 20px;
       -ms-border-radius: 20px;
       -o-border-radius: 20px;
+
+      @include respond(bp-smallest) {
+        width: 110%;
+        left: -5%;
+      }
     }
   }
 
@@ -86,6 +83,10 @@
 
     @include respond(phone) {
       width: 95%;
+    }
+
+    @include respond(bp-smallest) {
+      width: 100%;
     }
   }
 
@@ -110,6 +111,10 @@
     -webkit-box-shadow: 7px 7px 12px 3px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 7px 7px 12px 3px rgba(0, 0, 0, 0.7);
     box-shadow: 7px 7px 12px 3px rgba(0, 0, 0, 0.7);
+
+    @include respond(bp-smallest) {
+      width: 28rem;
+    }
 
     &-item {
       font-size: 5rem;
