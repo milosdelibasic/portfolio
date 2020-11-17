@@ -197,7 +197,7 @@
           border-bottom: 1px solid #555555;
 
           &:hover {
-            color: black;
+            color: rgb(114, 114, 114);
           }
         }
       }
@@ -536,6 +536,71 @@
         top: 42px;
         left: 17px;
       }
+
+      @include respond(popup-big) {
+        background-image: url("../../resources/tablet280h.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 192px;
+        height: 280px; //1.42857
+
+        &::after {
+          width: 166px;
+          height: 221px;
+          top: 29.5px;
+          left: 12px;
+        }
+      }
+
+      @include respond(phone) {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+      }
+
+      @include respond(bp-medium) {
+        background-image: url("../../resources/tablet238h.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 162px;
+        height: 238px; //1.185185
+
+        &::after {
+          width: 141px;
+          height: 187px;
+          top: 25px;
+          left: 10px;
+        }
+      }
+
+      @include respond(bp-medium-small) {
+        background-image: url("../../resources/tablet198h.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 135px;
+        height: 198px; //1.185185
+
+        &::after {
+          width: 117px;
+          height: 156px;
+          top: 21px;
+          left: 8px;
+        }
+      }
+
+      @include respond(bp-small) {
+        background-image: url("../../resources/tablet159h.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 108px;
+        height: 159px; //1.185185
+
+        &::after {
+          width: 93.5px;
+          height: 125px;
+          top: 17px;
+          left: 6.5px;
+        }
+      }
     }
     & h3 {
       margin-top: 2rem;
@@ -574,6 +639,75 @@
         top: 37px;
         left: 7.5px;
         border: none;
+      }
+
+      @include respond(popup-big) {
+        background-image: url("../../resources/phone280h.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 139px; //1.4136546
+        height: 280px;
+
+        &::after {
+          width: 129.5px;
+          height: 226px;
+          top: 26px;
+          left: 5px;
+        }
+      }
+
+      @include respond(phone) {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+      }
+
+      @include respond(bp-medium) {
+        background-image: url("../../resources/phone238h.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 118px; //1.177966
+        height: 238px;
+
+        &::after {
+          width: 110px;
+          height: 192px;
+          top: 22px;
+          left: 4px;
+        }
+      }
+
+      @include respond(bp-medium-small) {
+        background-image: url("../../resources/phone198h.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 98px; //1.204
+        height: 198px;
+
+        &::after {
+          width: 91px;
+          height: 159.5px;
+          top: 18px;
+          left: 3px;
+        }
+      }
+
+      @include respond(bp-small) {
+        background-image: url("../../resources/phone159h.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 79px; //1.2405
+        height: 159px;
+
+        &::after {
+          width: 73px;
+          height: 128.5px;
+          top: 14.5px;
+          left: 2px;
+        }
+      }
+
+      @media only screen and (min-width: 50em) {
+        margin-bottom: 20rem;
       }
     }
     & h3 {

@@ -1,4 +1,12 @@
-#skills {
+.unskew {
+  transform: skewY(-3.85deg);
+  -webkit-transform: skewY(-3.85deg);
+  -moz-transform: skewY(-3.85deg);
+  -ms-transform: skewY(-3.85deg);
+  -o-transform: skewY(-3.85deg);
+}
+
+.skills {
   background-color: var(--color-light);
   color: var(--color-primary);
   transform: skewY(3.5deg);
@@ -10,19 +18,11 @@
   padding: 13rem 10rem 11rem 10rem;
   letter-spacing: 1.3px;
   margin-bottom: 5rem;
+  position: relative;
+  z-index: 3;
 
   border-bottom: 1px solid var(--border-primary);
-}
-
-.unskew {
-  transform: skewY(-3.85deg);
-  -webkit-transform: skewY(-3.85deg);
-  -moz-transform: skewY(-3.85deg);
-  -ms-transform: skewY(-3.85deg);
-  -o-transform: skewY(-3.85deg);
-}
-
-.skills {
+  /*  */
   text-align: center;
 
   &-heading {
@@ -96,7 +96,7 @@
       width: 28rem;
     }
 
-    @include respond(phone) {
+    @include respond(popup-big) {
       width: 30rem;
       height: 40rem;
     }
@@ -109,7 +109,7 @@
     }
 
     &:not(:last-of-type) {
-      @include respond(phone) {
+      @include respond(popup-big) {
         margin-bottom: 6.5rem;
       }
     }
@@ -164,7 +164,7 @@
         justify-content: space-between;
       }
 
-      @include respond(phone) {
+      @include respond(popup-big) {
         flex-direction: column;
         align-items: center;
       }

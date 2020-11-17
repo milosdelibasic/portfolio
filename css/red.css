@@ -158,8 +158,8 @@
   );
   background: -o-linear-gradient(top, #bd2121 0%, #580000 50%, #bd2121 100%);
   background: linear-gradient(top, #bd2121 0%, #580000 50%, #bd2121 100%);
-  -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
-  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid #692f2f;
   color: var(--color-light);
   transition: all 0.2s !important;
@@ -170,7 +170,7 @@
 }
 
 .popup-inner-views input:checked + label:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(247, 196, 196);
 }
 
 .skills-heading::before {

@@ -1,8 +1,18 @@
 #about {
+  // background-color: var(--color-primary);
+
+  // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.about {
   background-color: var(--color-primary);
   padding: 15rem 10rem;
+  color: var(--color-text-light);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 
   @include respond(tab-land) {
+    flex-direction: column;
     padding: 5rem 0.5rem 13rem 1.5rem;
   }
 
@@ -12,18 +22,6 @@
 
   @include respond(big-desktop) {
     padding: 12rem 10rem 18rem 10rem;
-  }
-
-  // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-}
-.about {
-  color: var(--color-text-light);
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-
-  @include respond(tab-land) {
-    flex-direction: column;
   }
 
   &-buttonBox {
@@ -220,8 +218,15 @@
     }
   }
 
+  &-left {
+    // position: relative;
+    position: static;
+    z-index: 3;
+  }
+
   &-right {
     position: relative;
+    z-index: 3;
 
     @include respond(tab-land) {
       display: flex;
